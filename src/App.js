@@ -4,6 +4,7 @@ import PostListPage from './pages/PostListPage';
 import PostPage from './pages/PostPage';
 import RegisterPage from './pages/RegisterPage';
 import WritePage from './pages/WritePage';
+import AdminPage from './pages/AdminPage';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/write" element={<WritePage />} />
+            <Route path="/admin" element={<AdminPage />} />
             <Route path="/@:username">
                 <Route index element={<PostListPage />} />
                 <Route path=":postId" element={<PostPage />} />
